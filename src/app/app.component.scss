@@ -1,46 +1,79 @@
-*:root {
-    --color-dark: #000;
-    --color-white: white;
-    --color-light: #ababab;
-    --color-purple: #2a9e1b;
+ * {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 
-}
-
-* {
-    background-color: var(--color-dark);
-    color: var(--color-white);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
 body {
+    font-family: "inter", sans-serif;
+    background: #24292f;
+}
+
+main {
     display: flex;
+    margin: 10px auto;
+    height: 720px;
+    width: 1000px;
     justify-content: center;
-    align-items: center;
-    min-width: 100vh;
-    flex-direction: column;
-    gap: 16px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.312)
 }
 
-.clock {
-    display: flex;
-    gap: 50px;
+img {
+    border-radius: 10px 0px 0px 10px;
 }
 
-.clock span {
-    font-size: 150px;
-    display: flex;
-    align-items: center;
-    gap: 50px;
+button {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0.8rem 1.2rem;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #fff;
+    font-size: 1rem;
+    transition: 0.2s;
+    cursor: pointer;
 }
 
-.clock span:not(:last-child)::after {
-    content: ":";
+button:hover {
+    background-color: #24292f;
+    transform: scale(0.9);
+}
+
+.segunda {
+    width: 742px;
+    padding: 30px 120px;
+    height: 720px;
+    background-color: red;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.title {
+    color: black;
     margin-bottom: 25px;
-    color: red;
 }
 
-h2 strong {
-    color: red;
+.subtitle {
+    color: yellow;
+    margin-bottom: 25px;
+}
+
+.input-box {
+    border: none;
+    box-shadow: 1px 1px 6px #00000041;
+}
+
+.produto {
+    width: auto;
+}
+
+.produto li {
+    display: inline-block;
+    align-items: center;
+    width: 40%;
+    border-radius: 0dvb;
+
+
 }
